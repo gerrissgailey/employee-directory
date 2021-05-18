@@ -4,7 +4,7 @@
 
 This app serves as an employee directory. It pulls from a mock-up API of "employees" and has the ability to filter through employees by name in order to find a specific employee and view their details.
 
-A live deployment of this app on Heroku can be viewed by [Clicking Here](https://fast-brushlands-63045.herokuapp.com/)
+A live deployment of this app on GitHub Pages can be viewed by [Clicking Here](https://gerrissgailey.github.io/employee-directory/)
 
 ## Table of Contents:
 * [Installation](#installation)
