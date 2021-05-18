@@ -6,24 +6,25 @@ const Table = (props) => {
             <thead>
                 <tr>
                     <th>
-                        image
+                        Image
                     </th>
                     <th>
-                        name
+                        Name
                     </th>
                     <th>
-                        email
+                        Email
                     </th>
                     <th>
-                        phone
+                        Phone
                     </th>
                     <th>
-                        date of birth
+                        Date of Birth
                     </th>
                 </tr>
             </thead>
             <tbody>
-                {props.allEmployees.map(person => {
+
+                {props.allEmployees.filter(employee => employee.name.first.toLowerCase().includes(props.search.toLowerCase())).map(person => {
                     return(
                         <tr>
                             <td>

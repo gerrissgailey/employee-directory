@@ -23,17 +23,15 @@ class CreateList extends Component{
     };
     
     handleInputChange = event => {
-        const search = event.target.name;
         const value = event.target.value;
         this.setState({
-        [search]: value
-        });
+            search: value
+        })
     };
 
     nameArray = ()=> {
         const sorted = [ ...this.state.allEmployees ].sort((a, b) => a.name.first > b.name.first ? 1 : -1)
         this.setState({
-            ...this.state,
             allEmployees: sorted
         })
     }
